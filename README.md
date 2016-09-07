@@ -43,22 +43,21 @@ Automaton buttons:
 * Transition: Brings up a STPVC (after Transition variables set, ATM begins) 
 * Final: Brings up a SFPVC (after final weight set, SFM begins)
 * Control Points: Toggles on/off automaton showing its control points
-
-Minimize Button:
-* Creates Minimized version of the Automaton using the OpenFST library (http://www.openfst.org/twiki/bin/view/FST/MinimizeDoc)
+* Minimize: Creates Minimized version of the Automaton using the OpenFST library (http://www.openfst.org/twiki/bin/view/FST/MinimizeDoc)
+* Beautify: Optimizes distances between the Automaton's states, so that Automaton is legible
 
 
 
 ## SetTransitionPopViewController (STPVC):
 (Popped after tapping on the “Transition” Button in AVC) 
 
-* Type in a Number (Int/Float only) on the text field, and then tap the “Input”/“Output”/“Weight” button to assign the field’s value to the corresponding variable
+* Type in a Number on the text field, and then tap the “Input”/“Output”/“Weight” button to assign the field’s value to the corresponding variable
 
 
 ## SetFinalPopViewController (SFPVC):
 (Popped after tapping on the “Final” Button in AVC)
 
-* Type in a Number (Int/Float only) on the text field to set a final Weight
+* Type in a Number on the text field to set a final Weight
 
 ## Demonstartion
 
@@ -66,7 +65,7 @@ Minimize Button:
 
 ![alt tag](https://github.com/jeremieroche/VisualOpenFstiOS/blob/master/Automaton_Pics/Sample_AVC.png)
 
-###### Minimized Automaton (After Pressing Minimize Button)
+###### Minimized Automaton (After Pressing "Minimize" Button)
 
 ![alt tag](https://github.com/jeremieroche/VisualOpenFstiOS/blob/master/Automaton_Pics/Minimized_Automaton.png)
 
@@ -78,7 +77,7 @@ Minimize Button:
 
 ![alt tag](https://github.com/jeremieroche/VisualOpenFstiOS/blob/master/Automaton_Pics/State_Moved.png)
 
-###### Moving Automaton: Tap Transition
+###### Moving Automaton: Tap Transition (specifically its label)
 
 ![alt tag](https://github.com/jeremieroche/VisualOpenFstiOS/blob/master/Automaton_Pics/Trans_Selected.png)
 
